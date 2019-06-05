@@ -6,9 +6,9 @@ def meditation_check():
     Player.UseSkill('Meditation')
     while Player.Mana != Player.ManaMax:
         if Journal.GetLineText('You cannot focus your concentration'):
-            Misc.Pause(6000)
+            Misc.Pause(7000)
             Player.UseSkill('Meditation')
-            Misc.Pause(6000)
+            Misc.Pause(7000)
            
 
 while Player.GetRealSkillValue('Magery') < Player.GetSkillCap('Magery'):
