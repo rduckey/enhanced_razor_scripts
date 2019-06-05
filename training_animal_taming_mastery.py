@@ -5,9 +5,9 @@ while Player.GetRealSkillValue('Animal Taming') < Player.GetSkillCap('Animal Tam
         Target.Last()
         Misc.Pause(1000)
     else:
+        Player.UseSkill('Meditation')
         while Player.Mana != Player.ManaMax:
-            Player.UseSkill('Meditation')
-            if Player.Mana != Player.ManaMax:
-                Misc.Pause(11000)
-            else:
-                break
+            if Journal.GetLineText('You cannot focus your concentration'):
+                Misc.Pause(6000)
+                Player.UseSkill('Meditation')
+                Misc.Pause(6000)
