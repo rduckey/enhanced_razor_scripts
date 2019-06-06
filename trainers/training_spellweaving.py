@@ -69,12 +69,16 @@ while Player.GetRealSkillValue('Spell Weaving') < Player.GetSkillCap('Spell Weav
             meditation_check()
     else:
         if Player.Hits > Player.HitsMax * .3:
-            Spells.CastSpellweaving('Word Of Death')
-            Target.WaitForTarget(10000, True)
-            Target.Self()
-            Misc.Pause(delay)
+            if Player.Mana > 50:
+                Spells.CastSpellweaving('Word Of Death')
+                Target.WaitForTarget(10000, True)
+                Target.Self()
+                Misc.Pause(2000)
+            else:
+                meditation_check()
         else:
             while Player.Hits != Player.HitsMax:
                 Spells.CastMagery('Greater Heal')
                 Target.WaitForTarget(10000, True)
                 Target.Self()
+                Misc.Pause(1500)
