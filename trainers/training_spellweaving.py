@@ -1,3 +1,5 @@
+#Do NOT run this while wearing good armor, it will drain durability at higher skill levels
+
 from System.Collections.Generic import List
 from System import Byte
 import sys
