@@ -19,7 +19,7 @@ def meditation_check():
            
 def dispel():
     while Player.Followers > 0:
-    summonmob = Mobiles.ApplyFilter(summon)
+        summonmob = Mobiles.ApplyFilter(summon)
     for v in summonmob:
         v = Mobiles.Select(summonmob, 'Nearest')
         Mobiles.SingleClick(v)
