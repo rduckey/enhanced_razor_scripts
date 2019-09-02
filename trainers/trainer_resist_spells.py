@@ -1,3 +1,5 @@
+#Made to be used with 100%LRC suit
+#Must have spellbook with at least Weaken, Clumsy, and Feeblemind
 casting_delay= 1500
 while Player.GetRealSkillValue('Magic Resist') < Player.GetSkillCap('Magic Resist'):
     Spells.CastMagery('Weaken')
