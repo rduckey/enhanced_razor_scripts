@@ -1,4 +1,5 @@
 #*******IMPORTANT**********
+#Must Have enough magery to cast Greater Heal
 #This script will only work if the player has enough tinkering skill to trap a box 
 #currently tinkering skill must be raised manually
 #Remove Trap     Tinkering
