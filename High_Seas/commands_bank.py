@@ -1,0 +1,5 @@
+Player.ChatSay(42, 'Guards! open the bank, claim my steed, and say recdu, recsu, ')
+Misc.Pause(1200)
+Player.ChatSay(2, 'Ord')
+Misc.Pause(2500)
+Player.ChatSay(10, 'Anord')
